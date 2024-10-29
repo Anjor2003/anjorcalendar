@@ -86,7 +86,7 @@ function calculateAvailabilityTimeSlots(
     "yyyy-MM-dd HH:mm",
     new Date(),
   );
-
+  // @ts-ignore
   const busySlots = nylasData.data[0].timeSlots.map((Slot) => ({
     start: fromUnixTime(Slot.startTime),
     end: fromUnixTime(Slot.endTime),

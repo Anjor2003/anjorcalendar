@@ -5,7 +5,7 @@ import { useFormStatus } from "react-dom";
 import Image from "next/image";
 import GoogleLogo from "@/public/GoogleLogo.svg";
 import { Loader2 } from "lucide-react";
-import GithubLogo from "@/public/GithubLogo.svg";
+import GithubLogo from "@/public/GitHubLogo.svg";
 import { cn } from "@/lib/utils";
 
 interface iAppProps {
