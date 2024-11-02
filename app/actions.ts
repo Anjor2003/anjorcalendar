@@ -9,7 +9,7 @@ import { revalidatePath } from "next/cache"
 import { nylas } from './lib/nylas'
 
 
-export async function OnBoardingAction(prevState: any, formData: FormData) {
+export async function OnboardingAction(prevState: any, formData: FormData) {
   const session = await requireUser()
 
   const submission = await parseWithZod(formData, {
