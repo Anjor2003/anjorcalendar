@@ -29,6 +29,7 @@ async function getData(userId: string) {
   if (!userData) {
     throw new Error("El usuario no existe");
   }
+  
   const data = await nylas.events.list({
     identifier: userData.grantId as string,
     queryParams: {
@@ -42,8 +43,6 @@ async function getData(userId: string) {
 export default async function MeetinggRoute() {
   const session = await requireUser();
   const data = await getData(session.user?.id as string);
-
-  // console.log(data);
 
   return (
     <>

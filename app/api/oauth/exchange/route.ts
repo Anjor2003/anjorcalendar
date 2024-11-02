@@ -16,7 +16,7 @@ export async function GET(req: NextRequest) {
   try {
     const response = await nylas.auth.exchangeCodeForToken({
       clientSecret: nylasConfig.apiKey,
-      clientId: nylasConfig.clientId,
+      clientId: nylasConfig.clientId!,
       redirectUri: nylasConfig.redirectUri,
       code: code,
     })
