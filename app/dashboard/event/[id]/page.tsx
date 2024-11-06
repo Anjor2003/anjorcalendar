@@ -24,7 +24,7 @@ async function getData(eventTypeId: string) {
 }
 
 export default async function EditRoute({
-  params,
+  params
 }: {
   params: { id: string };
 }) {
